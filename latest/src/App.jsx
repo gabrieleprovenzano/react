@@ -7,6 +7,6 @@ export function App() {
         <HelloWorld />
         <p>What a beautiful day</p>
         <hr />
-        <Welcome name="Jimmy"/>
+        <Welcome name="Jimmy" age={24}/>
     </div>
 )}
