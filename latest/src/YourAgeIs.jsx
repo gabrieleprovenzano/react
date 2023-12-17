@@ -1,7 +1,10 @@
-export const YourAge = ({age}) => {
+export const YourAge = ({age , name}) => {
     return (
     <div>
-    <p>Your Age is {age} years old</p>
+    {age === 18 && <p>Your Age is {age} years old</p>}
+    {!!age && <p>Hello</p>}
+    {/*{age > 18 && age < 65 && <p>Your Age is {age} years old</p>}*/}
+    {age > 18 && age < 65 && <p>Your Age is {age} years old, {name}</p>}
     </div>
     )
 }
