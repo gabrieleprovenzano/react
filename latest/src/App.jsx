@@ -9,6 +9,6 @@ export function App() {
         <p>What a beautiful day</p>
         <hr />
         <Welcome name="Jimmy"/>
-        <YourAge age={64} name="John"/>
+        <YourAge age={19}/>
     </div>
 )}
