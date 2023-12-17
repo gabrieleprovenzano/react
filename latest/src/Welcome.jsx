@@ -1,8 +1,7 @@
-const Welcome = ({name , age}) => {
+const Welcome = ({name}) => {
     return (
     <div>
            <p>Welcome, {name}!</p>
-           <p>You're {age} years old</p>
     </div>
     )
 }

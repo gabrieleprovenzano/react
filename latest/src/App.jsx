@@ -1,5 +1,6 @@
 import { HelloWorld } from "./HelloWorld";
 import Welcome  from "./Welcome";
+import { YourAge } from "./YourAgeIs";
 
 export function App() {
     return (
@@ -7,6 +8,7 @@ export function App() {
         <HelloWorld />
         <p>What a beautiful day</p>
         <hr />
-        <Welcome name="Jimmy" age={24}/>
+        <Welcome name="Jimmy"/>
+        <YourAge age={23}/>
     </div>
 )}
