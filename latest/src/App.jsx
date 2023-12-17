@@ -1,3 +1,4 @@
+import { AlertClock } from "./AlertClock";
 import { HelloWorld } from "./HelloWorld";
 import Welcome  from "./Welcome";
 import { YourAge } from "./YourAgeIs";
@@ -10,5 +11,6 @@ export function App() {
         <hr />
         <Welcome name="Jimmy"/>
         <YourAge age={19}/>
+        <AlertClock />
     </div>
 )}
