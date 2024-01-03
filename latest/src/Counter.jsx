@@ -1,8 +1,12 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export const Counter = ()=> {
     const [count , setCount]= useState(0)
     
+    useEffect(()=> {
+       console.log(`the value of the counter is ${count}`);
+    }, [count]);
+
     function HandleIncrementCounter() {
         setCount((el)=> el+1)
     }
