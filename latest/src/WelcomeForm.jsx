@@ -32,6 +32,7 @@ export function WelcomeForm() {
     <input name= "password" type="password" value={data.password} onChange={handleInputChange} />
     <input name="session" type="checkbox" value={data.session} onChange={handleInputChange} />
     <button onClick={handleResetForm}>Reset</button>
+    <button disabled= {!data.username || !data.password} onClick={handleResetForm}>Login</button>
     </div>
     )
 }
