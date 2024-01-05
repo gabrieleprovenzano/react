@@ -4,7 +4,9 @@ import { Counter } from "./Counter";
 import { CounterDisplay } from "./CounterDisplay";
 import { HelloWorld } from "./HelloWorld";
 import { MouseClicker } from "./MouseClicker";
+import { MyForm } from "./MyForm";
 import Welcome  from "./Welcome";
+import { WelcomeForm } from "./WelcomeForm";
 import { YourAge } from "./YourAgeIs";
 
 export function App() {
@@ -20,5 +22,6 @@ export function App() {
         <CounterDisplay />
         <Clock />
         <MouseClicker />
+        <WelcomeForm />
     </div>
 )}
