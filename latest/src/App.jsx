@@ -1,4 +1,5 @@
 import { AlertClock } from "./AlertClock";
+import { Color } from "./Color";
 import { Counter } from "./Counter";
 import { CounterDisplay } from "./CounterDisplay";
 import { HelloWorld } from "./HelloWorld";
@@ -20,5 +21,6 @@ export function App() {
         <CounterDisplay />
         <MouseClicker />
         <MyForm />
+        <Color color={["red" , "blue"]}/>
     </div>
 )}
