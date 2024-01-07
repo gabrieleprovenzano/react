@@ -1,3 +1,6 @@
+{/*The advantages using the formdata API method are that: Is easier to use, because simplifies the process - is widely supported in modern browsers
+   The disadvanteges are that: oldest browser doesn't support it - it's not safe as the submit event method */}
+
 export function MyUncontrolledForm() {
     function handleFormSubmit(event) {
         event.preventDefault()
