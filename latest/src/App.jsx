@@ -1,11 +1,10 @@
 import { AlertClock } from "./AlertClock";
-import { Clock } from "./Clock";
 import { Counter } from "./Counter";
 import { CounterDisplay } from "./CounterDisplay";
 import { HelloWorld } from "./HelloWorld";
 import { MouseClicker } from "./MouseClicker";
+import { MyUncontrolledForm } from "./MyUncontrolledForm";
 import Welcome  from "./Welcome";
-import { WelcomeForm } from "./WelcomeForm";
 import { YourAge } from "./YourAgeIs";
 
 export function App() {
@@ -19,8 +18,7 @@ export function App() {
         <AlertClock />
         <Counter />
         <CounterDisplay />
-        <Clock />
         <MouseClicker />
-        <WelcomeForm />
+        <MyUncontrolledForm />
     </div>
 )}
