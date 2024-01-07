@@ -1,9 +1,9 @@
 import { AlertClock } from "./AlertClock";
 import { Counter } from "./Counter";
 import { CounterDisplay } from "./CounterDisplay";
-import { FocusableInput } from "./FocusableInput";
 import { HelloWorld } from "./HelloWorld";
 import { MouseClicker } from "./MouseClicker";
+import { MyForm } from "./MyForm";
 import Welcome  from "./Welcome";
 import { YourAge } from "./YourAgeIs";
 
@@ -19,6 +19,6 @@ export function App() {
         <Counter />
         <CounterDisplay />
         <MouseClicker />
-        <FocusableInput />
+        <MyForm />
     </div>
 )}
