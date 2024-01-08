@@ -1,10 +1,10 @@
 import { AlertClock } from "./AlertClock";
-import { Color } from "./Color";
 import { Counter } from "./Counter";
 import { CounterDisplay } from "./CounterDisplay";
 import { HelloWorld } from "./HelloWorld";
 import { MouseClicker } from "./MouseClicker";
 import { MyForm } from "./MyForm";
+import { MyList } from "./MyList";
 import Welcome  from "./Welcome";
 import { YourAge } from "./YourAgeIs";
 
@@ -21,6 +21,12 @@ export function App() {
         <CounterDisplay />
         <MouseClicker />
         <MyForm />
-        <Color color={["red" , "blue"]}/>
+        <MyList 
+        items={[
+            {id:1 , name:"string1"},
+            {id:2 , name:"string2"},
+            {id:3 , name:"string3"}
+        ]}
+        />
     </div>
 )}
