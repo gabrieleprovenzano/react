@@ -1,4 +1,5 @@
 import { AlertClock } from "./AlertClock";
+import { Clock } from "./Clock";
 import { Counter } from "./Counter";
 import { CounterDisplay } from "./CounterDisplay";
 import { GooDMorning } from "./GoodMornig";
@@ -16,6 +17,7 @@ export function App() {
         <HelloWorld />
         <p>What a beautiful day</p>
         <hr />
+        <Clock />
         <Welcome name="Jimmy"/>
         <YourAge age={19}/>
         <AlertClock />
