@@ -4,17 +4,22 @@ export function MyListItem({item}) {
     const [counter , setCounter] = useState(0)
 
     function handleIncrementCounter() {
-        setCounter((el)=> el + 1)
+        
     }
 
     function Reset() {
         setCounter("")
+    }
+
+    function Remove() {
+        setCounter()
     }
     return(
         <li key={item.id}>
             <h4>{item.name}{counter}</h4>
             <button onClick={handleIncrementCounter}>Increment</button>
             <button onClick={Reset}>Reset</button>
+            <button onClick={Remove}>Remove</button>
             <input type="text" value={counter}/>
         </li>
     )

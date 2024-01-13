@@ -1,7 +1,9 @@
 import { AlertClock } from "./AlertClock";
 import { Counter } from "./Counter";
 import { CounterDisplay } from "./CounterDisplay";
+import { GooDMorning } from "./GoodMornig";
 import { HelloWorld } from "./HelloWorld";
+import { LoginEx } from "./LoginEx";
 import { MouseClicker } from "./MouseClicker";
 import { MyForm } from "./MyForm";
 import { MyList } from "./MyList";
@@ -10,7 +12,7 @@ import { YourAge } from "./YourAgeIs";
 
 export function App() {
     return (
-    <div>
+    <div className="app">
         <HelloWorld />
         <p>What a beautiful day</p>
         <hr />
@@ -28,5 +30,6 @@ export function App() {
             {id:3 , name:"string3"}
         ]}
         />
+        <GooDMorning />
     </div>
 )}
