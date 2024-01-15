@@ -1,3 +1,7 @@
+import { useContext } from "react"
+import { LanguageContext } from "./LanguageContext"
+
 export function HelloWorld() {
-    return <h1>Hello, World!</h1>
+const language = useContext(LanguageContext)
+    return <h1>{language === "en" ? "Hello, World" : "Ciao, Mondo"}</h1>
 }

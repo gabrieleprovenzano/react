@@ -3,18 +3,29 @@ import { Clock } from "./Clock";
 import { Container } from "./Container";
 import { Counter } from "./Counter";
 import { CounterDisplay } from "./CounterDisplay";
-import { GooDMorning } from "./GoodMornig";
 import { HelloWorld } from "./HelloWorld";
-import { LoginEx } from "./LoginEx";
 import { MouseClicker } from "./MouseClicker";
 import { MyForm } from "./MyForm";
 import { MyList } from "./MyList";
 import Welcome  from "./Welcome";
 import { YourAge } from "./YourAgeIs";
+import { LanguageContext } from "./LanguageContext";
+import { useState } from "react";
+
 
 export function App() {
+    const [language , setLanguage] = useState("en")
+        
+    function handleSetLanguage(language){
+           setLanguage(language)
+    }
+    
     return (
+        <div>
+            <button onClick={()=> handleSetLanguage("it")}>IT</button>
+            <button onClick={()=> handleSetLanguage("en")}>EN</button>
     <Container title={<h1>My Awesome App</h1>}>
+        <LanguageContext.Provider value={language}>
         <HelloWorld />
         <p>What a beautiful day</p>
         <hr />
@@ -33,6 +44,7 @@ export function App() {
             {id:3 , name:"string3"}
         ]}
         />
-        <GooDMorning />
+        </LanguageContext.Provider>
     </Container>
+        </div>
 )}
