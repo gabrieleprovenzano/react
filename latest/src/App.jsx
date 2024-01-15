@@ -1,5 +1,6 @@
 import { AlertClock } from "./AlertClock";
 import { Clock } from "./Clock";
+import { Container } from "./Container";
 import { Counter } from "./Counter";
 import { CounterDisplay } from "./CounterDisplay";
 import { GooDMorning } from "./GoodMornig";
@@ -13,7 +14,7 @@ import { YourAge } from "./YourAgeIs";
 
 export function App() {
     return (
-    <div className="app">
+    <Container title={<h1>My Awesome App</h1>}>
         <HelloWorld />
         <p>What a beautiful day</p>
         <hr />
@@ -33,5 +34,5 @@ export function App() {
         ]}
         />
         <GooDMorning />
-    </div>
+    </Container>
 )}
