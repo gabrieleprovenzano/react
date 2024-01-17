@@ -1,19 +1,13 @@
 
 import { HelloWorld } from "./HelloWorld";
+import { HookCounter } from "./HookCounter";
 import Welcome  from "./Welcome";
 import { YourAge } from "./YourAgeIs";
 import { useState } from "react";
-import { GitHubUser } from "./GitHubUser";
-import { GithubUsers } from "./GithubUsers";
 
 
 export function App() {
-    const [language , setLanguage] = useState("en")
-        
-    function handleSetLanguage(language){
-           setLanguage(language)
-    }
-    
+
     return (
         <div>
         <HelloWorld />
@@ -21,7 +15,6 @@ export function App() {
         <hr />
         <Welcome name="Jimmy"/>
         <YourAge age={19}/>
-        <GitHubUser username="gabrieleprovenzano"/>
-        <GithubUsers />
+        <HookCounter />
         </div>
 )}
