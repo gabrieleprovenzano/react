@@ -4,6 +4,7 @@ import Welcome  from "./Welcome";
 import { YourAge } from "./YourAgeIs";
 import { useState } from "react";
 import { GitHubUser } from "./GitHubUser";
+import { GithubUsers } from "./GithubUsers";
 
 
 export function App() {
@@ -21,5 +22,6 @@ export function App() {
         <Welcome name="Jimmy"/>
         <YourAge age={19}/>
         <GitHubUser username="gabrieleprovenzano"/>
+        <GithubUsers />
         </div>
 )}

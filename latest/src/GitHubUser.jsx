@@ -18,9 +18,9 @@ export function GitHubUser({username}) {
 
     return(
         <div>
-          {data && <h1> {data.name} </h1>}
+            {data && <h1> {data.name} </h1>}
           {data && <h1>{data.login}</h1>}
-          {data && <img src="https://avatars.githubusercontent.com/u/146100399?v=4" />}
+          {data && <img src={data.avatar_url} />}
         </div>
     )
 }
