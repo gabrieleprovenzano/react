@@ -10,7 +10,7 @@ export function Container({title , children}) {
     return(
         <div className="container">
             <div className="class-title">{title}</div>
-            <button onClick={handleToggleCollapse}>Toggle</button>
+            <button onClick={handleToggleCollapse}>Toggle</button> 
            {collapse && <div className="class-content">{children}</div>}
         </div>
     )
