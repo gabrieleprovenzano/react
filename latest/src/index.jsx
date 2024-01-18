@@ -3,10 +3,10 @@ import { App } from "./App";
 import { createRoot } from "react-dom/client";
 import "./layout.scss"
 import Welcome from "./Welcome";
+import { Router } from "./Router";
+import ReactDOM  from "react-dom";
 
-createRoot(document.getElementById('root')).render(
-<StrictMode>
-    <App />
-    <Welcome />
-</StrictMode>
-)
+const root = document.querySelector("#root")
+ReactDOM.render(<Router /> , root)
+
+
