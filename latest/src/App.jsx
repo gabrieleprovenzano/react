@@ -5,6 +5,7 @@ import { HookCounter } from "./HookCounter";
 import Welcome  from "./Welcome";
 import { YourAge } from "./YourAgeIs";
 import { useState } from "react";
+import { HookCounters } from "./useCounter";
 
 
 export function App() {
@@ -16,7 +17,7 @@ export function App() {
         <hr />
         <Welcome name="Jimmy"/>
         <YourAge age={19}/>
-        <HookCounter initialValue={99}/>
         <CurrentLocation />
+        <HookCounters initialValue={0} />
         </div>
 )}
