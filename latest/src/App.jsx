@@ -1,16 +1,14 @@
 import { Routes } from "react-router-dom";
-import { Container } from "./Container";
-import Welcome from "./Welcome";
 import { Route } from "react-router-dom";
-import { LoginEx } from "./LoginEx";
-import { HookCounters } from "./useCounter";
+import { Counter } from "./Counter";
+import { Welcome } from "./Welcome";
 
 export function App() {
     return (
-        <Container>
+        <div>
             <Routes>
-                 <Route path="/" element={<Welcome name={"Jimmy"}/>} />
-                 <Route path="login" element={<HookCounters />} />
+                 <Route path="/:name" element={<Welcome />} />
+                 <Route path="counter" element={<Counter />} />
             </Routes>
-        </Container>
+            </div>
 )}

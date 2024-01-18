@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 
-export const Counter = ()=> {
+export function Counter() {
     const [count , setCount]= useState(0)
 
     const up = useRef("up")
@@ -31,3 +31,4 @@ export const Counter = ()=> {
         </div>
     )
 }
+
