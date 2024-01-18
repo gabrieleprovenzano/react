@@ -1,6 +1,5 @@
 
-
-import { GithubUsers } from "./GithubUsers";
+import { CurrentLocation } from "./CurrentLocation";
 import { HelloWorld } from "./HelloWorld";
 import { HookCounter } from "./HookCounter";
 import Welcome  from "./Welcome";
@@ -18,6 +17,6 @@ export function App() {
         <Welcome name="Jimmy"/>
         <YourAge age={19}/>
         <HookCounter initialValue={99}/>
-        <GithubUsers />
+        <CurrentLocation />
         </div>
 )}
