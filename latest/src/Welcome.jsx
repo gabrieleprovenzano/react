@@ -7,13 +7,12 @@ export function Welcome() {
     const Navigate = useNavigate()
 
 function handleClick() {
-    Navigate("/counter")
+    Navigate("/login")
 }
 
     return (
     <div className="welcome">
            <p>Welcome, {name}!</p>
-           <Link to="/counter">Home</Link>
            <button onClick={handleClick}>Enter the app</button>
     </div>
     )
