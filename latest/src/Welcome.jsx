@@ -13,7 +13,7 @@ function handleClick() {
     return (
     <div className="welcome">
            <p>Welcome, {name}!</p>
-           <Link to="/counter">Enter App</Link>
+           <Link to="/counter">Home</Link>
            <button onClick={handleClick}>Enter the app</button>
     </div>
     )
