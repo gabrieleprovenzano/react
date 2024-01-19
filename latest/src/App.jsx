@@ -4,6 +4,8 @@ import { Counter } from "./Counter";
 import { Welcome } from "./Welcome";
 import { ShowGithubUser } from "./ShowGitHubUsers";
 import { GithubUsersSWR } from "./GithubUsersSWR";
+import { GitHubUser } from "./GitHubUser";
+import { TodoList } from "./TodoList";
 
 export function App() {
 
@@ -22,7 +24,9 @@ export function App() {
                  <Route path="/" element={<Welcome />} />
                  <Route path="/counter" element={<Counter />} />
                  <Route path="*" element={<div><p>Not Found</p><Link to="/">Go Home</Link></div>} /> 
-                 <Route path="/users" element={<GithubUsersSWR />} />
+                 <Route path="/users" element={<GithubUsersSWR />}>
+                    <Route path=":username" element={<GitHubUser /> }></Route>
+                 </Route>
                  <Route path="/users/:id" element={<ShowGithubUser />} />   
             </Routes>
             </div>

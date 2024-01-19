@@ -1,5 +1,6 @@
 import useSWR from "swr";
 import { useGitHubUsersSWR } from "./useGitHubUsersSWR";
+import { Link, Outlet } from "react-router-dom";
 
 
 export function GithubUsersSWR() {
@@ -13,9 +14,10 @@ export function GithubUsersSWR() {
             {users && (
                 <ul>
                     {users.map((user)=>
-                    <li key={user.login}>{user.login}</li>)}
+                    <li key={user.login}> <Link to={`/users/${user.login}`}>{user.login}</Link> </li>)}
                 </ul>
             )}
+            <Outlet />
         </div>
     )
 }
