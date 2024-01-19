@@ -1,11 +1,11 @@
-export const YourAge = ({age , name}) => {
-    return (
+import React from 'react';
+
+const Age = ({ value }) => {
+  return (
     <div>
-    {/*age === 18 && <p>Your Age is {age} years old</p>}
-    {/*!!age && <p>Hello</p>}
-    {{age > 18 && age < 65 && <p>Your Age is {age} years old</p>}
-    {age > 18 && age < 65 && <p>Your Age is {age} years old, {name}</p>*/}
-    {age > 18 && <p>You're very young</p>}
+      <p>This is the Age component. Value: {value}</p>
     </div>
-    )
+  )
 }
+
+export default Age;

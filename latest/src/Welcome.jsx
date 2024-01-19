@@ -1,8 +1,22 @@
-const Welcome = ({name}) => {
-    return (
+import React from 'react';
+import Age from './Age'; 
+
+const Welcome = ({ name, age }) => {
+  return (
     <div>
-           <p>Welcome, {name}!</p>
+      <h1>Welcome, {name}!</h1>
+
+      {age > 18 && <p>you're very young</p> && <Age key={1} value={1} />}
+
+      {age !== undefined && <Age key={2} value={2} />}
+
+      {age > 18 && age < 65 && <Age key={3} value={3} />}
+
+      {age > 18 && age < 65 && name === "John" && <Age key={4} value={4} />}
+
+      {age <= 18 && <Age key={5} value={5} />}
     </div>
-    )
+  )
 }
-export default Welcome 
+
+export default Welcome
