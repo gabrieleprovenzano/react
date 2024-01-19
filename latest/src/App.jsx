@@ -4,7 +4,7 @@ import { CounterDisplay } from "./CounterDisplay";
 import { HelloWorld } from "./HelloWorld";
 import { MouseClicker } from "./MouseClicker";
 import { MyForm } from "./MyForm";
-import { MyList } from "./MyList";
+import { MyList, TodoList } from "./MyList";
 import Welcome  from "./Welcome";
 import { YourAge } from "./YourAgeIs";
 
@@ -21,12 +21,6 @@ export function App() {
         <CounterDisplay />
         <MouseClicker />
         <MyForm />
-        <MyList 
-        items={[
-            {id:1 , name:"string1"},
-            {id:2 , name:"string2"},
-            {id:3 , name:"string3"}
-        ]}
-        />
+        <TodoList />
     </div>
 )}
