@@ -15,11 +15,11 @@ const resetTodos = () => {
     setTodos([])
   }
 
- {/* const removeTodo = (index) => {
+  const removeTodo = (index) => {
     const newTodos = [...todos]
     newTodos.splice(index, 1)
     setTodos(newTodos)
-  }*/}
+  }
 
   return (
     <div>
@@ -40,7 +40,7 @@ const resetTodos = () => {
         />
         <button onClick={addTodo}>Add Todo</button>
         <button onClick={resetTodos}>Reset Todo</button>
-        {/*<button onClick={removeTodo}>Remove Todo</button>*/}
+        <button onClick={removeTodo}>Remove Todo</button>
       </div>
     </div>
   )
