@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom"
 import { useGitHubUser } from "./useGitHubUser"
 
 
@@ -12,7 +13,6 @@ export function GitHubUser({username}) {
 
     return(
         <div>
-            <button onClick={handleGetUserData}>Click</button>
             {loading && <h1>Loading...</h1>}
             {error && <h1>There has been an error</h1>}
             {data && <h1> {data.name} </h1>}
