@@ -1,32 +1,47 @@
-import { useState } from "react"
+import React, { useState } from 'react';
 
-export function MyListItem({item}) {
-    const [counter , setCounter] = useState(0)
+export function TodoList() {
+  const [todos, setTodos] = useState([])
+  const [newTodo, setNewTodo] = useState('')
 
-    function handleIncrementCounter() {
-        setCounter((el)=> el + 1)
+  const addTodo = () => {
+    if (newTodo.trim() !== '') {
+      setTodos([...todos, newTodo])
+      setNewTodo('')
     }
+  }
 
-    function Reset() {
-        setCounter("")
-    }
-    return(
-        <li key={item.id}>
-            <h4>{item.name}{counter}</h4>
-            <button onClick={handleIncrementCounter}>Increment</button>
-            <button onClick={Reset}>Reset</button>
-            <input type="text" value={counter}/>
-        </li>
-    )
-}
+const resetTodos = () => {
+    setTodos([])
+  }
 
-export function MyList({items}) {
+ {/* const removeTodo = (index) => {
+    const newTodos = [...todos]
+    newTodos.splice(index, 1)
+    setTodos(newTodos)
+  }*/}
 
-    return(
-        <ul>
-            {items.map((item)=>(
-                <MyListItem item={item} />
-            ))}
-        </ul>
-    )
+  return (
+    <div>
+      <h2>Todo List</h2>
+
+      <ul>
+        {todos.map((todo, index) => (
+          <li key={index}>{todo}</li>
+        ))}
+      </ul>
+
+      <div>
+        <input
+          type="text"
+          value={newTodo}
+          onChange={(e) => setNewTodo(e.target.value)}
+          placeholder="Add a new todo"
+        />
+        <button onClick={addTodo}>Add Todo</button>
+        <button onClick={resetTodos}>Reset Todo</button>
+        {/*<button onClick={removeTodo}>Remove Todo</button>*/}
+      </div>
+    </div>
+  )
 }
