@@ -28,6 +28,7 @@ export function Counter() {
             <button onClick={HandleIncrementCounter}>Increment</button>
             <button onClick={HandleDecrementCounter}>Decrement</button>
             <button onClick={Reset}>Reset</button>
+            
         </div>
     )
 }
